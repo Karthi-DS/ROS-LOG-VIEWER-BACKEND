@@ -38,7 +38,7 @@ async def get_file_contents():
             if line.strip(): 
                 parts = line.split(" ",4)
                 if len(parts) >= 4:
-                    timestamp = parts[0].strip("[]") + " - " + parts[1].strip("[]")
+                    timestamp = parts[0].strip("[]") + " T " + parts[1].strip("[]")
                     severity = parts[2].strip("[]")
                     node = parts[3].strip("[]/")
                     message = parts[4]
